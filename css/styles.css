@@ -58,21 +58,27 @@ body {
 	color: var(--secondary-txt-cl);
 }
 
-.navigation-link-studio:hover,
-.navigation-link-studio:focus{
+.current{
 	color: var(--accent-txt-cl);
 }
 
-.navigation-link-portfolio:hover,
-.navigation-link-portfolio:focus{
+.navigation-link:hover,
+.navigation-link:focus{
 	color: var(--accent-txt-cl);
 }
+
+
 
 .header-contacts-list {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+}
+
+.header-phone:hover,
+.header-phone:focus {
+	color: var(--accent-txt-cl);
 }
 
 .header-mail:hover,
@@ -210,10 +216,13 @@ color: #212121;
 background: #F5F4FA;
 }
 
-.portfolio-navigation-btn-all{
+.portfolio-navigation-btn:hover,
+.portfolio-navigation-btn:focus{
 	color: var(--main-bg-cl);
 	background-color: var(--accent-txt-cl);
 }
+
+
 
 /*portfolio gallery section*/
 
