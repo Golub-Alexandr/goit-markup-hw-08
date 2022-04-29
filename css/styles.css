@@ -32,6 +32,24 @@ body {
 	border: none;
 }
 
+.list{
+	list-style: none;
+}
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 /*header section*/
 
 .header {
@@ -47,7 +65,7 @@ body {
 }
 
 .header-logo-studio{
-	color: #212121;
+	color: var(--secondary-txt-cl);
 }
 
 .navigation-link{
@@ -99,7 +117,7 @@ text-align: center;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color:#FFFFFF;;
+color: var(--main-bg-cl);
 }
 
 .hero-btn{
@@ -107,8 +125,8 @@ color:#FFFFFF;;
 	font-size: 16px;
 	line-height:1.88;
 	letter-spacing: 0.06em;
-	background-color:#2196F3;
-	color:#FFFFFF;;
+	background-color: var(--accent-txt-cl);
+	color: var(--main-bg-cl);
 }
 
 .hero-btn:hover,
@@ -128,7 +146,7 @@ color:#FFFFFF;;
 	font-size: 14px;
 	line-height: 1.14px;
 	text-transform: uppercase;
-	color: #212121;
+	color: var(--secondary-txt-cl);
 }
 
 /*work section*/
@@ -165,6 +183,10 @@ color:#FFFFFF;;
 
 .footer{
 	background-color: var(--dark-bg-cl);
+}
+
+.address{
+	font-style: normal;
 }
 
 .footer-logo{
@@ -211,7 +233,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
-color: #212121;
+color: var(--secondary-txt-cl);
 background: #F5F4FA;
 }
 
@@ -221,8 +243,6 @@ background: #F5F4FA;
 	background-color: var(--accent-txt-cl);
 }
 
-
-
 /*portfolio gallery section*/
 
 .portfolio-gallery-title{
@@ -231,4 +251,9 @@ background: #F5F4FA;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--secondary-txt-cl);
+}
+
+.portfolio-gallery-text{
+	font-size: 16px;
+	line-height: 1.88;
 }
