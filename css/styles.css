@@ -245,8 +245,6 @@ img {
 .about-list{
 	display: flex;
 	justify-content: center;
-	margin-top: 15px;
-	
 	font-size: 14px;
 	line-height: 1.71;
 }
@@ -260,8 +258,8 @@ img {
 }
 
 .about-title{
+	margin-top: 15px;
 	margin-bottom: 10px;
-
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14px;
@@ -456,7 +454,7 @@ img {
 }
 
 .portfolio-gallery-item{
-	width: calc((100% - 60px) / 3);
+	flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-gallery-item:not(:nth-child(3n)) {
