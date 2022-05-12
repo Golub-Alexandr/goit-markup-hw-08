@@ -14,15 +14,6 @@
 /*Grid*/
 }
 
-
-.grid{
-
-}
-
-.grid-item{
-
-}
-
 body {
 	font-family:var(--main-font);
 	color:var(--main-txt-color);
@@ -155,10 +146,6 @@ img {
 	color: var(--accent-txt-cl);
 }
 
-.header-contacts-item:not(:last-child) {
-	margin-right: 50px;
-}
-
 .header-contacts-list {
 	display: flex;
 	margin-left: auto;
@@ -168,18 +155,44 @@ img {
 	letter-spacing: 0.02em;
 }
 
+.header-contacts-item:not(:last-child) {
+	margin-right: 50px;
+	align-items: center;
+}
+
 .header-mail{
-	display: block;
+	display: flex;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	color: var(--text-color-primary);
 }
 
+.header-mail::before{
+	content: "";
+	width:16px;
+	height: 12px;
+	margin-right: 10px;
+	background-color: red;
+	background-size: contain;
+}
+
 .header-phone{
-	display: block;
+	display: flex;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	color: var(--text-color-primary);
+}
+
+.header-phone::before{
+	content: "";
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
+	background-color: red;
+	background-size: contain;
+
 }
 
 .navigation-link:hover,
@@ -192,8 +205,16 @@ img {
 	color: var(--accent-txt-cl);
 }
 
+.header-phone:hover::before {
+	color: var(--accent-txt-cl);
+}
+
 .header-mail:hover,
 .header-mail:focus{
+	color: var(--accent-txt-cl);
+}
+
+.header-mail:hover::before {
 	color: var(--accent-txt-cl);
 }
 
@@ -477,6 +498,11 @@ img {
 
 .portfolio-gallery-item:not(:nth-last-child(-n + 3)) {
 	margin-bottom: 30px;
+}
+
+.portfolio-gallery-item:hover{
+	border: 1px solid #EEEEEE;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-gallery-title{
