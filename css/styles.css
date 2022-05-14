@@ -538,11 +538,12 @@ img {
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: var(--main-bg-cl);
+	display: inline-block;
+	margin-bottom: 20px;
 }
 
 .footer-social-list{
 	display: flex;
-	margin-top: 20px;
 }
 
 .footer-social-item{
