@@ -13,6 +13,11 @@
 --btn-bg-cl:#F5F4FA;
 /*Grid*/
 --icon-color:#AFB1B8;
+/* animation */
+--timing-function-cl: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--timing-function-bg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--timing-function-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--timing-function-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -131,16 +136,27 @@ img {
 }
 
 .navigation-link{
+	position: relative;
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	
 	color: var(--secondary-txt-cl);
+}
+
+.navigation-link.current::after{
+	content: "";
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 4px;
+	background-color: var(--accent-txt-cl);
+	border-radius: 2px;
 }
 
 .current{
@@ -185,16 +201,19 @@ img {
 .navigation-link:hover,
 .navigation-link:focus {
 	color: var(--accent-txt-cl);
+	transition: var(--timing-function-cl);
 }
 
 .header-phone:hover,
 .header-phone:focus {
 	color: var(--accent-txt-cl);
+	transition: var(--timing-function-cl);
 }
 
 .header-mail:hover,
 .header-mail:focus{
 	color: var(--accent-txt-cl);
+	transition: var(--timing-function-cl);
 }
 
 /*hero section*/
@@ -248,6 +267,50 @@ img {
 .hero-btn:hover,
 .hero-btn:focus{
 	background: #188CE8;
+	transition: var(--timing-function-bg);
+}
+
+.backdrop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 100;
+}
+
+.backdrop.is-hidden{
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.modal-wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 1);
+	width: 528px;
+	height: 581px;
+	border-radius: 4px;
+}
+
+.modal-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: var(--main-bg-cl);
+	cursor: pointer;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	padding: 0;
 }
 
 /*Наши качества*/
@@ -308,7 +371,6 @@ img {
 
 .work-title{
 	margin-bottom: 50px;
-
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
@@ -322,11 +384,38 @@ img {
 }
 
 .work-item{
-	width: calc((100% - 60px) /3);
+	position: relative;
+	width: 100%;
+	flex-basis: calc((100% - 60px) /3);
 }
 
 .work-item:not(:last-child) {
 	margin-right: 30px;
+}
+
+.work-item::after{ 
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 70px;
+	background-color: rgba(47, 48, 58, 0.8);
+	z-index: 1;
+}
+
+.work-text {
+	position: absolute;
+	padding: 27px 82px;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	font-weight: 700;
+	line-height: 1.14;
+	text-align: center;
+	color: var(--main-bg-cl);
+	z-index: 2;
+
 }
 
 /*Команда*/
@@ -402,7 +491,8 @@ img {
 
 .social-link:hover,
 .social-link:focus{
-	background-color:var(--accent-txt-cl) ;
+	background-color:var(--accent-txt-cl);
+	transition: var(--timing-function-bg);
 }
 
 .social-icon{
@@ -412,6 +502,7 @@ img {
 .social-link:hover .social-icon, 
 .social-link:focus .social-icon{
 	fill: var(--main-bg-cl);
+	transition: var(--timing-function-fill);
 }
 
 /* Постоянные клиенты */
@@ -451,11 +542,13 @@ img {
 .client-link:hover,
 .client-link:focus{
 	border-color: var(--accent-txt-cl)
+
 }
 
 .client-link:hover .client-icon,
 .client-link:focus .client-icon{
 	fill: var(--accent-txt-cl);
+	transition: var(--timing-function-fill);
 }
 
 /* footer section*/
@@ -515,16 +608,19 @@ img {
 .footer-contacts-item-link:hover,
 .footer-contacts-item-link:focus{
 	color: var(--accent-txt-cl);
+	transition: var(--timing-function-cl);
 }
 
 .footer-mail:hover,
 .footer-mail:focus{
 	color: var(--accent-txt-cl);
+	transition: var(--timing-function-cl);
 }
 
 .footer-phone:hover,
 .foter-phone:focus{
 	color: var(--accent-txt-cl);
+	transition: var(--timing-function-cl);
 }
 
 .footer-social-block{
@@ -559,12 +655,12 @@ img {
 	height: 100%;
 	background-color: #43444d;
 	border-radius: 50%;
-
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus{
 	background-color: var(--accent-txt-cl);
+	transition: var(--timing-function-bg);
 }
 
 .footer-social-item:not(:last-child){
@@ -611,6 +707,9 @@ img {
 	color: var(--main-bg-cl);
 	background-color: var(--accent-txt-cl);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	transition: var(--timing-function-cl);
+	transition: var(--btn-bg-cl);
+	transition: var(--timing-function-shadow);
 }
 
 /*portfolio gallery section*/
@@ -635,6 +734,7 @@ img {
 .portfolio-gallery-list .portfolio-gallery-item:hover,
 .portfolio-gallery-list .portfolio-gallery-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	transition: var(--timing-function-shadow);
 }
 
 .portfolio-gallery-title{
@@ -660,3 +760,60 @@ img {
 	border-right: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 }
+
+.portfolio-gallery-layer {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-layer-text {
+	font-size: 18px;
+	line-height: 1.55;
+	color: var(--main-bg-cl);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 63px 24px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(33, 150, 243, 0.9);
+	opacity: 0;
+	margin: 0;
+	transform: translateY(100%);
+	transition: var(--timing-function-bg)
+}
+
+
+.portfolio-gallery-link:hover .portfolio-layer-text,
+.portfolio-gallery-link:focus .portfolio-layer-text {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+
+
+/* 
+.portfolio-layer-layer {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(33, 150, 243, 0.9);
+	opacity: 0;
+	margin: 0;
+	transform: translateY(100%);
+	transition: var(--timing-function-bg);
+}
+
+.portfolio-gallery-link:hover .portfolio-layer-caption,
+.portfolio-gallery-link:focus .portfolio-layer-caption {
+	opacity: 1;
+	transform: translateY(0%);
+} */
