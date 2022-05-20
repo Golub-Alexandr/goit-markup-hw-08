@@ -14,6 +14,7 @@
 /*Grid*/
 --icon-color:#AFB1B8;
 /* animation */
+--timing-function: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 --timing-function-cl: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 --timing-function-bg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 --timing-function-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -277,6 +278,7 @@ img {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
+	transition: opacity var(--timing-function), visibility var(--timing-function);
 	z-index: 100;
 }
 
@@ -767,24 +769,22 @@ img {
 }
 
 .portfolio-layer-text {
+	display: block;
 	font-size: 18px;
 	line-height: 1.55;
+	padding: 63px 24px;
+	text-align: left;
 	color: var(--main-bg-cl);
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 63px 24px;
-	display: flex;
-	align-items: center;
-	position: absolute;
-	content: "";
 	width: 100%;
 	height: 100%;
 	background-color: rgba(33, 150, 243, 0.9);
 	opacity: 0;
-	margin: 0;
 	transform: translateY(100%);
-	transition: var(--timing-function-bg)
+	transition: transform var(--timing-function);
+	transition: 250ms;
 }
 
 
@@ -793,27 +793,3 @@ img {
 	opacity: 1;
 	transform: translateY(0);
 }
-
-
-
-
-/* 
-.portfolio-layer-layer {
-	display: flex;
-	align-items: center;
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 100%;
-	background-color: rgba(33, 150, 243, 0.9);
-	opacity: 0;
-	margin: 0;
-	transform: translateY(100%);
-	transition: var(--timing-function-bg);
-}
-
-.portfolio-gallery-link:hover .portfolio-layer-caption,
-.portfolio-gallery-link:focus .portfolio-layer-caption {
-	opacity: 1;
-	transform: translateY(0%);
-} */
