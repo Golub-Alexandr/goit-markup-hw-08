@@ -620,7 +620,7 @@ img {
 }
 
 .footer-phone:hover,
-.foter-phone:focus{
+.footer-phone:focus{
 	color: var(--accent-txt-cl);
 }
 
