@@ -184,7 +184,7 @@ img {
 	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	color: var(--text-color-primary);
+	color: var(--main-txt-color);
 	transition: var(--timing-function-cl);
 }
 
@@ -193,7 +193,7 @@ img {
 	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	color: var(--text-color-primary);
+	color: var(--main-txt-color);
 	transition: var(--timing-function-cl);
 }
 
