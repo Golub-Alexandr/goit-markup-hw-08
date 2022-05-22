@@ -67,6 +67,7 @@ img {
 .btn{
 	cursor: pointer;
 	font-family: inherit;
+	letter-spacing: inherit;
 	color: currentColor;
 	border: none;
 }
