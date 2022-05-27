@@ -447,7 +447,7 @@ img {
 	height: 15px;
 	margin-right: 7px;
 
-	display: flexbox;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	
