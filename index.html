@@ -54,8 +54,9 @@
 						для вашего бизнеса</h1>
 					<button type="button" class="btn hero-btn" data-modal-open>Заказать услугу</button>
 					<div class="backdrop is-hidden" data-modal>
+<!-- modal form -->
 						<div class="modal-wrapper">
-							<button class="modal-btn" data-modal-close>
+							<button class="modal-btn btn" data-modal-close>
 								<svg class="modal-icon-mark" width="11px" height="11px">
 									<use href="./images/sprite.svg#x-mark"></use>
 								</svg>
@@ -93,20 +94,19 @@
 								<span class="form-label">Комментарий</span>
 								<textarea class="form-comments" name="comments" placeholder="Введите текст"></textarea>
 							</label>
-							<label class="form-checkbox">
-								<span class="checkbox-container">
-								<input class="checkbox" name="agreement" type="checkbox" />
-									<svg class="checkbox-icon-checked" width="16px" height="15px">
-										<use href="./images/icons.svg#check"></use>
+							<label class="modal-policy-group">
+								<input class="checkbox visually-hidden" name="agreement" type="checkbox"  tabindex="-1" id="chk1-label"/>
+								<span class="custom-checkbox" tabindex="0" role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
+									<svg class="custom-checkbox-icon" width="13px" height="15px">
+										<use href="./images/sprite.svg#modal-checkbox"></use>
 									</svg>
-									<span class="checkbox-icon-unchecked"></span>
 								</span>
-								<span class="checkbox-label">
+								<span class="modal-policy-desc">
 								Соглашаюсь с рассылкой и принимаю
-									<a class="checkbox-label-link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
+									<a class="modal-policy-link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
 								</span>
 							</label>
-							<button class="hero-button" type="submit">Отправить</button>
+							<button class="send-btn btn" type="submit">Отправить</button>
 						</form>
 						</div>
 					</div>
