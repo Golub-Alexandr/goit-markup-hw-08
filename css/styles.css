@@ -338,8 +338,7 @@ img {
 	transition: var(--timing-function-fill);
 }
 
-.modal-btn:hover .modal-icon-mark,
-.modal-btn:focus .modal-icon-mark {
+.form-input-container:hover .form-input-icon{
 	fill: var(--accent-txt-cl);
 }
 
@@ -431,6 +430,10 @@ img {
 	border-color: var(--accent-txt-cl);
 }
 
+.form-input:hover .form-input-icon{
+fill:var(--accent-txt-cl);
+}
+
 .form-comments::placeholder {
 	color: rgba(117, 117, 117, 0.5);
 }
@@ -458,6 +461,12 @@ img {
 	transition: box-shadow var(--timing-function);
 	transition: border var(--timing-function-cl);
 	transition: var(--timing-function-bg);
+	transition: border-color var(--timing-function);
+}
+
+.custom-checkbox:hover,
+.custom-checkbox:focus{
+	border-color: var(--accent-txt-cl);
 }
 
 .checkbox:checked+.custom-checkbox {
@@ -487,7 +496,7 @@ img {
 	text-decoration-line: underline;
 }
 
-.send-btn{
+.send-btn {
 	padding: 10px 55px;
 	min-width: 200px;
 	
