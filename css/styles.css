@@ -331,11 +331,16 @@ img {
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
-	padding: 0;
+	padding: 0;	
 }
 
 .modal-icon-mark {
 	transition: var(--timing-function-fill);
+}
+
+.modal-btn:hover .modal-icon-mark,
+.modal-btn:focus .modal-icon-mark{
+	fill: var(--accent-txt-cl);
 }
 
 .form-input-container:hover .form-input-icon{
@@ -464,10 +469,13 @@ fill:var(--accent-txt-cl);
 	transition: border-color var(--timing-function);
 }
 
-.custom-checkbox:hover,
-.custom-checkbox:focus{
+.custom-checkbox:hover {
 	border-color: var(--accent-txt-cl);
 }
+
+.checkbox:focus .custom-checkbox {
+	border-color: var(--accent-txt-cl);
+}	
 
 .checkbox:checked+.custom-checkbox {
 	background-color: var(--accent-txt-cl);
