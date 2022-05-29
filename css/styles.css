@@ -473,7 +473,7 @@ fill:var(--accent-txt-cl);
 	border-color: var(--accent-txt-cl);
 }
 
-.checkbox:focus .custom-checkbox {
+.custom-checkbox:focus {
 	border-color: var(--accent-txt-cl);
 }	
 
@@ -895,6 +895,7 @@ fill:var(--accent-txt-cl);
 	margin-bottom: 20px;
 	
 	color: var(--main-bg-cl);
+	font-weight: 700;
 	line-height: 1.14;
 	text-transform: uppercase;
 }
