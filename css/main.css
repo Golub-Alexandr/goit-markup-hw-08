@@ -97,7 +97,7 @@ img {
   margin: 0;
 }
 
-.navigation__link--current {
+.current {
   color: var(--accent-txt-cl);
 }
 
@@ -134,6 +134,10 @@ img {
   color: var(--secondary-txt-cl);
   -webkit-transition: var(--timing-function-cl);
   transition: var(--timing-function-cl);
+}
+
+.navigation__link--current {
+  color: var(--accent-txt-cl);
 }
 
 .navigation__link:hover, .navigation__link:focus {

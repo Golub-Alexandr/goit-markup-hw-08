@@ -24,6 +24,9 @@
 	letter-spacing: 0.02em;
 	color: var(--secondary-txt-cl);
 	transition: var(--timing-function-cl);
+
+		&--current {
+				color: var(--accent-txt-cl);}
 		&:hover,
 		&:focus {
 		color: var(--accent-txt-cl);
@@ -43,5 +46,3 @@
 		}	
 
 		
-
-
