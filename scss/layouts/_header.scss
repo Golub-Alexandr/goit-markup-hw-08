@@ -1,0 +1,84 @@
+.header {
+	border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 93px;
+
+	font-family: var(--secondary-font);
+
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--accent-txt-cl);
+	text-decoration: none;
+}
+
+.header__logo-studio {
+	color: var(--secondary-txt-cl);
+}
+
+.header__group {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.header__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header__mail {
+	display: flex;
+	align-items: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: var(--main-txt-color);
+	transition: var(--timing-function-cl);
+
+	&:hover,
+	&:focus {
+	color: var(--accent-txt-cl);
+	}
+}
+
+.header__phone {
+	display: flex;
+	align-items: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: var(--main-txt-color);
+	transition: var(--timing-function-cl);
+
+	&:hover,
+	&:focus {
+	color: var(--accent-txt-cl);
+	}
+}
+
+.header__icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
+
+
+
+
