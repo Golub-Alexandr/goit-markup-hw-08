@@ -1,5 +1,10 @@
 .navigation {
-	display: flex;
+	display: none;
+	
+	@media screen and (min-width: 768px) {
+		display: flex;
+		margin-right: 84px;
+	}
 }
 
 .navigation__list {
@@ -45,4 +50,3 @@
 		border-radius: 2px;
 		}	
 
-		
