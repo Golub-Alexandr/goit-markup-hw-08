@@ -453,6 +453,20 @@ img {
   }
 }
 
+@media screen and (max-width: 265px) {
+  .portfolio-navigation__list,
+  .portfolio-navigation__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio-navigation__list,
+  .portfolio-navigation__item {
+    margin-top: 10px;
+  }
+}
+
 .subscribe__btn-content {
   display: -webkit-box;
   display: -ms-flexbox;

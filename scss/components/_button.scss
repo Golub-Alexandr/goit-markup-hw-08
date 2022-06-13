@@ -36,7 +36,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
 	@media screen and (max-width: 1199px) {
 		margin-top: 20px;
 		margin-left: auto;
@@ -79,6 +79,20 @@
 .portfolio-navigation__item:nth-child(-n + 3) {
 	@media screen and (max-width: 767px) {
 		margin-bottom: 15px;
+	}
+}
+
+.portfolio-navigation__list,
+.portfolio-navigation__item {
+	@media screen and (max-width: 265px) {
+		margin-bottom: 10px;	
+	}
+}
+
+.portfolio-navigation__list,
+.portfolio-navigation__item {
+	@media screen and (max-width: 479px) {
+		margin-top: 10px;
 	}
 }
 
