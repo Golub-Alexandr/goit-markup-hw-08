@@ -866,6 +866,11 @@ img {
   fill: var(--main-bg-cl);
 }
 
+.subscribe {
+  width: 100%;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe {
     margin-top: 60px;
@@ -880,8 +885,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe {
+    width: auto;
+    text-align: left;
     margin-left: auto;
-    width: 570px;
   }
 }
 
@@ -909,11 +915,11 @@ img {
 }
 
 .subscribe__email {
+  display: block;
   width: 100%;
   height: 50px;
-  padding: 0;
-  margin: 0;
-  padding-left: 16px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   color: var(--main-bg-cl);
@@ -926,50 +932,41 @@ img {
   transition: border-color var(--timing-function);
 }
 
-@media screen and (min-width: 1200px) {
-  .subscribe__email {
-    margin-right: 10px;
-  }
-}
-
 .subscribe__email:focus, .subscribe__email:hover {
   outline: 0;
   border-color: var(--main-bg-cl);
 }
 
 .subscribe__email::-webkit-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe__email:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe__email::-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe__email::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .subscribe__email {
     width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe__email {
-    width: 358px;
+    width: 353px;
+    margin-right: 12px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
