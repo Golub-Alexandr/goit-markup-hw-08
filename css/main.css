@@ -69,13 +69,6 @@ body {
   }
 }
 
-.header > .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
@@ -982,6 +975,13 @@ img {
 
 .header {
   border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 .header__logo {

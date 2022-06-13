@@ -2,6 +2,11 @@
 	border-bottom: 1px solid #ECECEC;
 }
 
+.header__container{
+	display: flex;
+	position: relative;
+}
+
 .header__logo {
 	display:block;
 	padding: 16px 0;	
