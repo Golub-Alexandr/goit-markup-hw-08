@@ -407,6 +407,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    padding: 0;
+  }
+}
+
 .portfolio-navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -922,7 +928,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe__email {
-    margin-right: 12px;
+    margin-right: 10px;
   }
 }
 
