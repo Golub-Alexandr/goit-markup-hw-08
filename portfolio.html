@@ -15,7 +15,7 @@
 	<body>
 	<!--Шапка сайта-->
 		<header class="header">
-		<div class="header__container">
+		<div class="container">
 			<a class="link header__logo" href="index.html" lang="en">Web<span class="header__logo-studio">Studio</span></a>
       <nav class="navigation">
 			<ul class="list navigation__list">
@@ -52,8 +52,8 @@
 			>
 			<svg
 				class="mobile-menu__icon"
-				width="40"
-				height="40"
+				width="24"
+				height="16"
 				aria-label="Переключатель мобильного меню"
 			>
 				<use
@@ -73,8 +73,8 @@
 			>
 		<svg
 			class="mobile-menu__icon"
-			width="40"
-			height="40"
+			width="19"
+			height="19"
 			aria-label="Переключатель мобильного меню"
 			>
 			<use
@@ -152,7 +152,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">	
-							<img src="./images/portfolio/portfolio1.jpg" alt="Ноутбук" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio1/portfolio1_lg.jpg    1x,
+									./images/portfolio/1200/portfolio1/portfolio1_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio1/portfolio1_md.jpg    1x,
+									./images/portfolio/768/portfolio1/portfolio1_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio1/portfolio1_sm.jpg    1x,
+									./images/portfolio/480/portfolio1/portfolio1_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio1/portfolio1_sm.jpg"
+									alt="Веб-сайт Технокряк"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 								<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -166,7 +197,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">	
-							<img src="./images/portfolio/portfolio2.jpg"  alt="Баскетбол" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio2/portfolio2_lg.jpg    1x,
+									./images/portfolio/1200/portfolio2/portfolio2_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio2/portfolio2_md.jpg    1x,
+									./images/portfolio/768/portfolio2/portfolio2_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio2/portfolio2_sm.jpg    1x,
+									./images/portfolio/480/portfolio2/portfolio2_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio2/portfolio2_sm.jpg"
+									alt="баскетбол"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 							<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -180,7 +242,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">	
-							<img src="./images/portfolio/portfolio3.jpg" alt="Логотип" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio3/portfolio3_lg.jpg    1x,
+									./images/portfolio/1200/portfolio3/portfolio3_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio3/portfolio3_md.jpg    1x,
+									./images/portfolio/768/portfolio3/portfolio3_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio3/portfolio3_sm.jpg    1x,
+									./images/portfolio/480/portfolio3/portfolio3_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio3/portfolio3_sm.jpg"
+									alt="рыбный ресторан"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 							<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -194,7 +287,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">
-							<img src="./images/portfolio/portfolio4.jpg" alt="Наушники" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio4/portfolio4_lg.jpg    1x,
+									./images/portfolio/1200/portfolio4/portfolio4_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio4/portfolio4_md.jpg    1x,
+									./images/portfolio/768/portfolio4/portfolio4_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio4/portfolio4_sm.jpg    1x,
+									./images/portfolio/480/portfolio4/portfolio4_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio4/portfolio4_sm.jpg"
+									alt="полноразмерные наушники"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 								<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -208,7 +332,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">
-							<img src="./images/portfolio/portfolio5.jpg" alt="Коробки" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio5/portfolio5_lg.jpg    1x,
+									./images/portfolio/1200/portfolio5/portfolio5_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio5/portfolio5_md.jpg    1x,
+									./images/portfolio/768/portfolio5/portfolio5_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio5/portfolio5_sm.jpg    1x,
+									./images/portfolio/480/portfolio5/portfolio5_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio5/portfolio5_sm.jpg"
+									alt="картонные коробки"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 								<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -222,7 +377,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">
-							<img src="./images/portfolio/portfolio6.jpg" alt="Монитор" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio6/portfolio6_lg.jpg    1x,
+									./images/portfolio/1200/portfolio6/portfolio6_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio6/portfolio6_md.jpg    1x,
+									./images/portfolio/768/portfolio6/portfolio6_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio6/portfolio6_sm.jpg    1x,
+									./images/portfolio/480/portfolio6/portfolio6_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio6/portfolio6_sm.jpg"
+									alt="компьюторный монитор"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 								<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -236,7 +422,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">
-							<img src="./images/portfolio/portfolio7.jpg" alt="Журнал" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio7/portfolio7_lg.jpg    1x,
+									./images/portfolio/1200/portfolio7/portfolio7_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio7/portfolio7_md.jpg    1x,
+									./images/portfolio/768/portfolio7/portfolio7_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio7/portfolio7_sm.jpg    1x,
+									./images/portfolio/480/portfolio7/portfolio7_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio7/portfolio7_sm.jpg"
+									alt="журнал"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 								<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -250,7 +467,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">
-							<img src="./images/portfolio/portfolio8.jpg" alt="Бирка" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio8/portfolio8_lg.jpg    1x,
+									./images/portfolio/1200/portfolio8/portfolio8_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio8/portfolio8_md.jpg    1x,
+									./images/portfolio/768/portfolio8/portfolio8_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio8/portfolio8_sm.jpg    1x,
+									./images/portfolio/480/portfolio8/portfolio8_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio8/portfolio8_sm.jpg"
+									alt="бирка"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 								<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>
@@ -264,7 +512,38 @@
 				<li class="gallery__item">
 					<a class="link gallery__link" href="">
 						<div class="gallery__layer">
-							<img src="./images/portfolio/portfolio9.jpg" alt="Работа за ноутбуком" width="" />
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+									./images/portfolio/1200/portfolio9/portfolio9_lg.jpg    1x,
+									./images/portfolio/1200/portfolio9/portfolio9_lg@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+									./images/portfolio/768/portfolio9/portfolio9_md.jpg    1x,
+									./images/portfolio/768/portfolio9/portfolio9_md@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+									./images/portfolio/480/portfolio9/portfolio9_sm.jpg    1x,
+									./images/portfolio/480/portfolio9/portfolio9_sm@2x.jpg 2x
+									"
+									type="image/jpg"
+									/>
+								<img
+									class="img"
+									src="./images/portfolio/480/portfolio9/portfolio9_sm.jpg"
+									alt="ноутбук"
+									loading="lazy"
+								/>
+							</picture>
 							<div class="gallery__layer-caption">
 								<p class="gallery__layer-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 							</div>

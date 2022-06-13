@@ -2,12 +2,6 @@
 	border-bottom: 1px solid #ECECEC;
 }
 
-.header__container {
-	display: flex;
-	align-items: center;
-	@extend .container;
-}
-
 .header__logo {
 	display:block;
 	padding: 16px 0;	
@@ -19,6 +13,7 @@
 	
 	color: var(--accent-txt-cl);
 	text-decoration: none;
+
 	
 	@media screen and (min-width: 768px) {
 		margin-right: 88px;
