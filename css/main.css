@@ -452,7 +452,7 @@ img {
   }
 }
 
-@media screen and (max-width: 272px) {
+@media screen and (max-width: 279px) {
   .portfolio-navigation__item:not(:last-child) {
     margin-bottom: 10px;
   }
