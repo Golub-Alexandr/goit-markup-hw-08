@@ -64,6 +64,7 @@
 			</button>
 		</div>
 	</header> 
+<!--мобильное меню  -->
 	<div class="mobile-menu js-menu-container" id="mobile-menu">
 		<button
 			class="menu-button--close is-open js-close-menu"
@@ -146,7 +147,7 @@
 							<label class="modal__field">
 								<span class="modal__label">Имя</span>
 								<span class="modal__input-container">
-									<input class="modal__input" name="name" type="text" />
+									<input class="modal__input" name="name" type="text" required />
 									<svg class="modal__input-icon" width="18px" height="18px">
 									<use href="./images/sprite.svg#modal-person"></use>
 									</svg>
@@ -155,7 +156,7 @@
 							<label class="modal__field">
 								<span class="modal__label">Телефон</span>
 								<span class="modal__input-container">
-									<input class="modal__input" name="phone" type="tel" />
+									<input class="modal__input" name="phone" type="tel" required />
 									<svg class="modal__input-icon" width="18px" height="18px">
 										<use href="./images/sprite.svg#modal-phone"></use>
 									</svg>
@@ -164,7 +165,7 @@
 							<label class="modal__field">
 								<span class="modal__label">Почта</span>
 								<span class="modal__input-container">
-									<input class="modal__input" name="e-mail" type="email" />
+									<input class="modal__input" name="e-mail" type="email" required />
 									<svg class="modal__input-icon" width="18px" height="18px">
 										<use href="./images/sprite.svg#modal-email"></use>
 									</svg>
@@ -175,7 +176,7 @@
 								<textarea class="modal__comments" name="comments" placeholder="Введите текст"></textarea>
 							</label>
 							<label class="modal__policy-group">
-								<input class="modal__checkbox visually-hidden" name="agreement" type="checkbox"  tabindex="-1" id="chk1-label"/>
+								<input class="modal__checkbox visually-hidden" name="agreement" type="checkbox"  tabindex="-1" id="chk1-label" required />
 								<span class="modal__custom-checkbox" tabindex="0" role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
 									<svg class="modal__custom-icon" width="13px" height="13px">
 										<use href="./images/sprite.svg#modal-checkbox"></use>
@@ -322,7 +323,7 @@
 				</li>
 			</ul>
 		</div>
-		</section> -->
+		</section> 
 <!--Команда-->
 		<section class="section team">
 			<div class="container">

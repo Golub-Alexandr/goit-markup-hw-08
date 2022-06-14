@@ -9,6 +9,10 @@
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 50px;
 	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 28px;
+	}
 }
 
 .client__list {
@@ -63,7 +67,7 @@
 
 .client__link {
 	display: flex;
-	width: 290px;
+	width: 210px;
 	height: 92px;
 
 	align-items: center;
