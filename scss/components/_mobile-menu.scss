@@ -60,10 +60,9 @@
 	transform: translateX(0);
 }
 
+
 .mobile-menu__nav--item {
-	&:not(:last-child) {
-		margin-bottom: 30px;
-	}
+	margin-bottom: 30px;
 }
 
 .mobile-menu__nav--link {
@@ -74,6 +73,7 @@
 
 	color: var(--secondary-txt-cl);
 }
+
 
 .mobile-menu__nav--link.nav__link--current {
 	color: var(--accent-txt-cl);
@@ -112,6 +112,9 @@
 .mobile-menu__socials {
 	display: flex;
 	flex-wrap: wrap;
+	@media screen and (max-height: 479px) {
+		display: none;
+	}
 }
 
 .mobile-menu__socials--item {
