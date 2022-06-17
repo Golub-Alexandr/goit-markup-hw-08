@@ -64,7 +64,11 @@
 	height: 30px;
 	padding: 0;
 
-
+	@media screen and (max-width: 479px) {
+		position: absolute;
+		top: 40px;
+		right: 8px;;
+	}
 }
 
 .modal__btn-icon {
