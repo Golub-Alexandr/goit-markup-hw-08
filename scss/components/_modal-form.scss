@@ -3,6 +3,9 @@
 	padding: 40px;
 	top: 50%;
 	left: 50%;
+
+	max-height: 100vh;
+	overflow: scroll;
 	
 	
 	background-color: var(--main-bg-cl);
@@ -21,19 +24,15 @@
 	
 	@media screen and (min-width: 480px) {
 		width: 450px;
-	}
-	
-	@media screen and (max-width: 768px) {
 		max-height: 100vh;
-		overflow: scroll;
+		overflow-y: auto;
 	}
-		
 
 	@media screen and (min-width: 1200px) {
 		width: 528px;
 	}
 
-}
+} 
 
 .modal__title {
 	// display: flex;
