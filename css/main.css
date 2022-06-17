@@ -554,7 +554,7 @@ img {
   height: 30px;
   padding: 0;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 768px) {
   .modal__btn {
     position: absolute;
     top: 40px;
