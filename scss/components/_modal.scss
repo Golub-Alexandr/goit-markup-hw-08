@@ -1,41 +1,38 @@
-.modal {
+.modal{
 	position: absolute;
 	padding: 40px;
 	top: 50%;
 	left: 50%;
 
-	overflow: hidden;
-	
 	background-color: var(--main-bg-cl);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	
+
 	opacity: 1;
 	transform: translate(-50%, -50%) scale(1);
-	
+
 	transition: transform var(--timing-function),
-	opacity var(--timing-function);
-
-	@media screen and (max-width: 479px) {
-		width: calc(100vw - 30px);
-	}
+			opacity var(--timing-function);
 	
-	@media screen and (min-width: 480px) {
-		width: 450px;
-	}
-
-	@media screen and (max-width: 768px) {
-		overflow-y: auto;
-	}
-
-	@media screen and (min-width: 1200px) {
-		width: 528px;
-	}
-} 
+		@media screen and (max-width: 479px) {
+			width: calc(100vw - 30px);
+		}
+	
+		@media screen and (min-width: 480px) {
+			width: 450px;
+		}
+	
+		@media screen and (max-width: 768px) {
+			max-height: 100vh;
+			overflow-y: scroll;
+		}
+	
+		@media screen and (min-width: 1200px) {
+			width: 528px;
+		}
+}
 
 .modal__title {
-	// display: flex;
-	// justify-content: center;
 	margin-bottom: 12px;
 
 	font-weight: 700;
@@ -63,12 +60,7 @@
 	height: 30px;
 	padding: 0;
 }
-// 	@media screen and (max-width: 768px) {
-// 		position: absolute;
-// 		top: 40px;
-// 		right: 8px;;
-// 	}
-// }
+
 
 .modal__btn-icon {
 	transition: var(--timing-function-fill);
@@ -141,11 +133,11 @@
 	transition: border-color var(--timing-function);
 
 	&:hover {
-	border-color: var(--accent-txt-cl);
+		border-color: var(--accent-txt-cl);
 	}
-	
+
 	&:hover .modal__input-icon {
-	fill: var(--accent-txt-cl);
+		fill: var(--accent-txt-cl);
 	}
 }
 
@@ -175,13 +167,13 @@
 
 	transition: border-color var(--timing-function);
 
-		&:hover {
+	&:hover {
 		border-color: var(--accent-txt-cl);
-		}
+	}
 
-		&::placeholder {
+	&::placeholder {
 		color: rgba(117, 117, 117, 0.5);
-		}
+	}
 }
 
 
@@ -196,7 +188,7 @@
 	width: 16px;
 	height: 15px;
 	margin-right: 7px;
-	
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -213,7 +205,7 @@
 	&:hover,
 	&:focus {
 		border-color: var(--accent-txt-cl);
-		}
+	}
 
 }
 
@@ -239,7 +231,7 @@
 	line-height: 1.17;
 	cursor: pointer;
 	user-select: none;
-		
+
 	@media screen and (min-width: 1200px) {
 		font-size: 14px;
 		line-height: 1.71;
@@ -271,6 +263,6 @@
 
 	&:hover,
 	&:focus {
-			background: #188CE8;
-		}
+		background: #188CE8;
+	}
 }
