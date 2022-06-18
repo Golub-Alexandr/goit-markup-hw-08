@@ -559,6 +559,12 @@ img {
   height: 30px;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  .modal__btn {
+    top: 40px;
+    right: 8px;
+  }
+}
 
 .modal__btn-icon {
   -webkit-transition: var(--timing-function-fill);

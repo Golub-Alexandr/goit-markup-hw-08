@@ -59,6 +59,10 @@
 	width: 30px;
 	height: 30px;
 	padding: 0;
+	@media screen and (max-width: 768px) {
+		top: 40px;
+		right: 8px;
+	}
 }
 
 
