@@ -45,6 +45,9 @@ body {
 body.modal-is-open {
   overflow: hidden;
 }
+body.js-menu-container-is-open {
+  overflow: hidden;
+}
 
 .container {
   width: 100%;

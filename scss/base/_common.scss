@@ -8,5 +8,9 @@ body {
 	&.modal-is-open {
 		overflow: hidden;
 	}
+
+	&.js-menu-container-is-open {
+		overflow: hidden;
+	}
 }
 
